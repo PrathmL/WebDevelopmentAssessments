@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Other content of your webpage -->
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Prathmesh Landge</p>
+        <p>
+            <a href="https://www.linkedin.com/in/prathmesh-landge-032479334/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/PrathmL" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically insert the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
